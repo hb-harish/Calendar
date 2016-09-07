@@ -13,7 +13,7 @@ public class Calendar
 		int year = sc.nextInt();
 		String months[] = {"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Dec"};
 		int[] days = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-		if (month == 1 && year%4==0) days[month] = 29;
+		if (month == 1 && year%4==0 && year%100!=0 ) days[month] = 29;
 		GregorianCalendar gc = new GregorianCalendar(year,month,1);
 		//String m = months[gc.get(Calendar.month)];
 		System.out.println( "\n         "+ months[month] + " " + year); 
