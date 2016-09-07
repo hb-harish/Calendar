@@ -16,7 +16,7 @@ public class Calendar
 		if (month == 1 && year%4==0) days[month] = 29;
 		GregorianCalendar gc = new GregorianCalendar(year,month,1);
 		//String m = months[gc.get(Calendar.month)];
-		System.out.println( "         "+ months[month] + " " + year); 
+		System.out.println( "\n         "+ months[month] + " " + year); 
 		System.out.println("---------------------------");
 		System.out.printf("%s %s %s %s %s %s %s\n","Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
 		int d = gc.get(gc.DAY_OF_WEEK);
